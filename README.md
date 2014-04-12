@@ -18,4 +18,4 @@ npm install
 npm start
 ````
 
-## Then you can get captures on demo directory and you can see all captures on your browser!
+## Then you can get captures on index directory and you can see all captures on your browser!
