@@ -1,0 +1,42 @@
+doctype
+html
+  head
+    meta(charset="utf-8")
+    title Screen shot images
+    link(rel="stylesheet", href="assets/css/font-awesome.min.css")
+    link(rel="stylesheet", href="assets/css/colorbox.css")
+    link(rel="stylesheet", href="assets/css/gh-fork-ribbon.css")
+    link(rel="stylesheet", href="assets/css/ss.css")
+  body
+
+    div(class="github-fork-ribbon-wrapper right")
+      div(class="github-fork-ribbon")
+        a(href="https://git.dev.rakuten.com/projects/CWDDDG/repos/phantom-screenshot/browse") Fork me on Stash
+
+    header
+      i(class="fa fa-camera-retro")
+      h1 phantom-screenshot
+      p Getting screenshot using Webkit powered by PhantomJS.
+
+    each dir in data.children
+      if dir.dir
+        h2
+          i(class="fa fa-folder-open")
+          | #{dir.dir}
+        ul(class="img-list", data-name="#{dir.dir}")
+          if dir.children
+            each file in dir.children
+              li
+                a(href="captures/#{dir.dir}/#{file.file}", title="#{file.file}")
+                  figure
+                    figcaption #{file.file}
+                    img(src="captures/#{dir.dir}/#{file.file}")
+                  i(class="fa fa-search-plus")
+
+    footer
+      small &copy; Rakuten, Inc.
+      a(href="https://git.dev.rakuten.com/projects/CWDDDG/repos/phantom-screenshot/browse") Stash
+
+    script(src="assets/js/jquery-1.11.0.min.js")
+    script(src="assets/js/jquery.colorbox-min.js")
+    script(src="assets/js/ss.js")

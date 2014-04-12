@@ -1,0 +1,139 @@
+body,
+div, ul, li, h1, h2, figure {
+    margin: 0;
+    padding: 0;
+}
+ol, ul {
+    list-style: none outside;
+}
+caption, th {
+    text-align: left;
+    font-weight: normal;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: sans-serif;
+}
+
+header {
+    padding: 15px 10px;
+    background-color: #43413E;
+    color: #00D7DF;
+    font-size: 30px;
+}
+
+header > .fa-camera-retro {
+    padding-right: 10px;
+    font-size: 40px;
+}
+
+header > p {
+    display: inline-block;
+    margin: 0;
+    color: #999;
+    font-size: 16px;
+}
+h1 {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+h2 {
+    padding: 10px;
+    background-color: #E1E0DC;
+    color: #43413E;
+    font-size: 20px;
+}
+
+h2 > .fa-folder-open {
+    padding-right: 5px;
+}
+
+.img-list {
+}
+
+.img-list > li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+}
+
+.img-list > li a {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+.img-list > li a:hover {
+    border: 1px solid #bbb;
+}
+
+.img-list > li figure {
+    display: block;
+    position: relative;
+}
+
+.img-list > li figcaption {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 3px 9px 4px 7px;
+    -webkit-border-radius: 0 0 5px 0;
+            border-radius: 0 0 5px 0;
+    background-color: rgba(0,0,0,0.7);
+    font-size: 13px;
+    color: #fff;
+}
+
+.img-list > li img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: none;
+}
+
+.img-list > li .fa-search-plus {
+    position: absolute;
+    top: 50px;
+    left: 55px;
+    font-size: 100px;
+    color: #999;
+    opacity: 0;
+    -webkit-transition: opacity .1s ease-in;
+    -moz-transition: opacity .1s ease-in;
+    -o-transition: opacity .1s ease-in;
+    transition: opacity .1s ease-in;
+}
+
+.img-list > li > a:hover .fa-search-plus {
+    opacity: 0.7;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 0.7em;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
+
+footer > small {
+    display: block;
+    padding-bottom: 5px;
+    color: #999;
+    font-size: 12px;
+}
+
+footer > a {
+    font-size: 12px;
+    color: #999;
+}

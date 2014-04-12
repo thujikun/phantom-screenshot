@@ -1,0 +1,23 @@
+{
+  "name": "phantom-screenshot",
+  "version": "0.0.1",
+  "scripts": {
+      "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:thujikun/phantom-screenshot.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "phantom": "^0.5.7",
+    "node-promise": "^0.5.10",
+    "jade": "^1.3.1",
+    "ncp": "^0.5.0",
+    "openurl": "^1.1.0",
+    "connect": "^2.14.4"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}
